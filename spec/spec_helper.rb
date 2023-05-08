@@ -1,5 +1,9 @@
+#file: spec/spec_helper.rb
+
 require 'simplecov'
 require 'simplecov-console'
+require 'database_connection'
+
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
@@ -7,6 +11,10 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   # SimpleCov::Formatter::HTMLFormatter
 ])
 SimpleCov.start
+
+
+DatabaseConnection.connect('shop_manager_test')
+
 
 RSpec.configure do |config|
   config.after(:suite) do
