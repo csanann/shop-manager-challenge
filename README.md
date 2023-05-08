@@ -1,6 +1,30 @@
 Shop Manager Project
 =================
+## Description
+In this project, we build terminal program to manage a shop database containing items and orders. The user can create new items,view the list of items in stock, create new orders, and view the list of orders placed.
 
+## What was done
+- Implemented user stories belows for managing shop items and orders
+- Integrated a database using the PG gem
+- Created repository classes for managing items and orders
+- Test-driven development approach to build the program
+- Mocked IO in tests to handle user input
+- Ensured test coverage using SimpleCov
+
+## What was learned
+- How to integrated a database using the PG gem
+- Building repository classes
+- Mocking IO in tests for user input handling
+- Test-driven development approach
+- Ensuring proper test coverage
+- Tried various approaches to resolve the encountered issues
+- Maintaining a calm and composed mental state while facing challenges
+
+## Challenges and Unsolved Issues
+We encountered an issue related to the 'initialize' method in the 'Order' class when creating a new order. Despite trying various approaches to solve the problem, the issue remained unresolved. However, it is important to note that the order was still saved in the database despite the error. The learning experience gained from troubleshooting the error was invaluable and contributed to the overall development process.
+
+# Challenges requirement:
+=======================================================================
 * Feel free to use Google, your notes, books, etc. but work on your own
 * If you refer to the solution of another coach or student, please put a link to that in your README
 * If you have a partial solution, **still check in a partial solution**
